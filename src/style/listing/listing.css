@@ -278,7 +278,7 @@
 .select-selected:after {
   position: absolute;
   content: "";
-  background-image: url(/src/image/arrow-down.svg);
+  background-image: url(src/image/arrow-down.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -391,7 +391,7 @@ input[type=checkbox]:checked:after {
   content: "";
   width: 10px;
   height: 10px;
-  background-image: url(/src/image/check-solid.svg);
+  background-image: url(../../image/check-solid.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -402,4 +402,102 @@ input[type=checkbox]:checked:after {
 
 input[type=checkbox]:focus {
   outline: none;
-}/*# sourceMappingURL=listing.css.map */
+}
+
+
+
+
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected {
+  background-color: transparent;
+}
+
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  background-image: url(../../image/arrow-down.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 21px;
+  right: 16px;
+  display: block;
+  width: 13px;
+  height: 8px;
+}
+
+.select-selected.select-arrow-active:after {
+  display: none;
+}
+
+.select-selected { 
+  color: #000;
+  padding: 13px 43px 13px 16px;
+  border: 1px solid #BDBDBD;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  
+}
+.select-selected:hover {
+  cursor: pointer;
+}
+.select-selected::selection {
+  border-color: green;
+}
+
+
+.select-arrow-active {
+  border-bottom: 1px solid transparent;
+  border-bottom-left-radius: 0!important;
+  border-bottom-right-radius: 0!important;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 12px;
+  background-color: #fff;  
+}
+.select-items div {
+  cursor: pointer;
+  user-select: none;
+  padding: 10px 0;
+  line-height: 12px;
+  
+}
+.select-items div:first-child {
+  padding-top: 7px;
+}
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  top: 40px;
+  z-index: 99;
+  border: solid 1px #BDBDBD;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top: none;
+  padding: 0px 13px 0 16px;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  color: #DF4E3C;
+}
+
+/*# sourceMappingURL=listing.css.map */

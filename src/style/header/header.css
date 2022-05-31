@@ -40,6 +40,9 @@
 .header__navigation--icon {
   margin-right: 31px;
 }
+.header__navigation--icon:hover {
+  cursor: pointer;
+}
 .header__navigation--icon:last-child {
   margin: 0;
 }

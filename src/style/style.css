@@ -5,22 +5,24 @@
 @import 'header/header.css';
 @font-face {
   font-family: "Noto Sans";
-  src: url(/src/fonts/NotoSans-Medium.ttf);
+  
+  src: url(../fonts/NotoSans-Medium.ttf);
+
   font-weight: 500;
 }
 @font-face {
   font-family: "Noto Sans";
-  src: url(/src/fonts/NotoSans-Bold.ttf);
+  src: url(../fonts/NotoSans-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "Noto Sans";
-  src: url(/src/fonts/NotoSans-Regular.ttf);
+  src: url(../fonts/NotoSans-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Noto Sans";
-  src: url(/src/fonts/NotoSans-Regular.ttf);
+  src: url(../fonts/NotoSans-Regular.ttf);
   font-weight: 600;
 }
 body {
